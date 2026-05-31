@@ -1,0 +1,27 @@
+flowchart TB
+
+A[Insurance Enrollment]
+
+A --> B[834 Enrollment]
+
+B --> C[Coverage Active]
+
+C --> D[270 Eligibility Request]
+
+D --> E[271 Eligibility Response]
+
+E --> F[Patient Visit]
+
+F --> G[837 Professional Claim]
+
+G --> H[Insurance Adjudication]
+
+H --> I[835 Remittance]
+
+I --> J[EOB]
+
+J --> K[Patient Responsibility]
+
+K --> L[AR Aging]
+
+L --> M[Collections]

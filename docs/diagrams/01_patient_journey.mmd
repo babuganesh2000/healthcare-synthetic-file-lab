@@ -1,0 +1,30 @@
+flowchart LR
+
+A[Patient]
+B[Coverage]
+C[Eligibility]
+D[Appointment]
+E[Registration]
+F[Encounter]
+G[Clinical Activity]
+H[Claim]
+I[Payment]
+J[Patient Balance]
+K[Collections]
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+F --> G
+G --> H
+H --> I
+I --> J
+J --> K
+
+G --> G1[Conditions]
+G --> G2[Procedures]
+G --> G3[Labs]
+G --> G4[Imaging]
+G --> G5[Medications]

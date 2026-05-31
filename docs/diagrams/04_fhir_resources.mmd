@@ -1,0 +1,16 @@
+flowchart LR
+
+A[Patient]
+
+A --> B[Encounter]
+
+B --> C[Condition]
+B --> D[Procedure]
+B --> E[Observation]
+B --> F[MedicationRequest]
+B --> G[DiagnosticReport]
+B --> H[ImagingStudy]
+
+G --> I[ExplanationOfBenefit]
+
+A --> J[Consent]

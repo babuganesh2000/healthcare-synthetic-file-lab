@@ -1,0 +1,47 @@
+flowchart LR
+
+A[Patient]
+
+A --> B[Coverage]
+A --> C[Encounter]
+
+C --> D[Conditions]
+C --> E[Procedures]
+C --> F[Labs]
+C --> G[Imaging]
+C --> H[Medications]
+
+D --> I[ICD10]
+E --> J[CPT HCPCS]
+F --> K[LOINC]
+G --> L[DICOM]
+H --> M[NDC RxNorm]
+
+B --> N[834]
+B --> O[270 271]
+
+C --> P[HL7]
+C --> Q[FHIR]
+
+D --> R[Claim]
+
+E --> R
+F --> R
+G --> R
+H --> R
+
+R --> S[837]
+
+S --> T[835]
+
+T --> U[EOB]
+
+U --> V[AR Aging]
+
+V --> W[Collections]
+
+Q --> X[TEFCA]
+
+Q --> Y[CARIN]
+
+Q --> Z[Da Vinci]

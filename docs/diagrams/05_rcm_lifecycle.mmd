@@ -1,0 +1,29 @@
+flowchart LR
+
+A[Encounter]
+
+A --> B[Charge]
+
+B --> C[Claim]
+
+C --> D[837]
+
+D --> E[Payer]
+
+E --> F[835]
+
+F --> G[EOB]
+
+G --> H[Patient Statement]
+
+H --> I[AR Aging]
+
+I --> J[Denial Work Queue]
+
+J --> K[Collections]
+
+K --> L[Bad Debt]
+
+K --> M[Payment Plan]
+
+K --> N[Charity Care]

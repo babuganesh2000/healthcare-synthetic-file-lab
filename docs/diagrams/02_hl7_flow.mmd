@@ -1,0 +1,24 @@
+flowchart TB
+
+A[Patient Schedules Appointment]
+
+A --> B[SIU S12]
+B --> C[Appointment Scheduled]
+
+C --> D[Patient Arrives]
+
+D --> E[ADT A04]
+E --> F[Patient Registered]
+
+F --> G[Provider Encounter]
+
+G --> H[ORM O01]
+H --> I[Lab Order]
+
+I --> J[Laboratory]
+
+J --> K[ORU R01]
+K --> L[Lab Result Returned]
+
+L --> M[DFT P03]
+M --> N[Charge Captured]
