@@ -18,8 +18,8 @@ data/generated/
 data/synthea_output/
 
 # Gradle
-synthea/.gradle/
-synthea/build/
+/synthea/
+/synthea/**
 
 # Python venv
 venv/
